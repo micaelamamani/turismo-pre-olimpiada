@@ -1,0 +1,112 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+body{
+    background:url("../img/Captura\ de\ pantalla\ 2026-06-02\ 203140.png");
+    background-size:cover;
+    background-position:center;
+    background-attachment:fixed;
+    color:white;
+}
+
+/*HEADER*/
+.logo{
+    display:flex;
+    align-items:center;
+    gap:15px;
+}
+
+.logo i{
+    color:#ff6600;
+    font-size:40px;
+}
+
+header{
+    display:flex;
+    align-items:center;
+    padding:15px;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+/*funciones*/
+.nav-header{
+    display:flex;
+    flex-wrap:wrap;       
+    flex:1;
+    justify-content: space-evenly;
+}
+
+.nav-header a{
+    color:white;
+    text-decoration:none;
+    font-weight:bold;
+    flex-shrink:0;         
+    padding:8px 12px;
+}
+
+.nav-header a:hover{
+    color:#ff6600;
+}
+
+/*login*/
+.usuario{
+    display:flex;
+}
+
+.usuario a{
+    color:#ff6600;
+    text-decoration:none;
+    font-weight:bold;
+    padding: 1vw;
+}
+
+.usuario a:hover{
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 1vw;
+}
+
+/*TABLA VENTAS*/
+.tabla-ventas {
+    width: 80%;
+    margin: 20px auto;
+    border-collapse: separate;
+    border-spacing: 0;
+    text-align: center;
+    font-family: Arial, sans-serif;
+}
+
+.tabla-ventas th,
+.tabla-ventas td {
+    padding: 12px;
+    border: 3px solid #000000;
+}
+
+.tabla-ventas tr:first-child th {
+    background-color:#ff6600;
+    color: #ffffff;
+    font-size: 1.3rem;
+    font-weight: bold;
+}
+
+.tabla-ventas tr, th {
+    background-color: #686868;
+    color: #ffffff;
+    font-weight: bold;
+}
+
+.tabla-ventas td {
+    background-color: #ffffff;
+    color: #555;
+    font-weight: bold;
+}
+
+input[type="month"] {
+    display: block;
+    margin: 20px auto;
+    padding: 8px;
+    border-radius: 1vw;
+}

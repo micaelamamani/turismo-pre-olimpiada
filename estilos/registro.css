@@ -1,0 +1,230 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+body {
+
+    min-height: 100vh;
+
+    background-image:
+        url("../img/Captura de pantalla 2026-06-02 203140.png");
+
+    background-size: cover;
+
+    background-position: center;
+
+    background-repeat: no-repeat;
+
+    color: white;
+
+    /* CAMBIAR ESTO */
+    display: flex;
+    flex-direction: column;
+
+}
+header{
+    width:100%;
+}
+
+main{
+
+    flex:1;
+
+    width:100%;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+}
+
+body::before {
+
+    content: "";
+
+    position: fixed;
+
+    inset: 0;
+
+    background:
+        rgba(0,
+            0,
+            0,
+            .18);
+
+    z-index: -1;
+
+}
+
+main {
+
+    width: 100%;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+}
+/*
+.contenedor-form {
+
+    width: 430px;
+
+    padding: 40px;
+
+    background:
+        rgba(255,
+            255,
+            255,
+            0.08);
+
+    backdrop-filter:
+        blur(6px);
+
+    border-radius: 30px;
+
+}*/
+
+.contenedor-form h1 {
+
+    text-align: center;
+
+    font-size: 50px;
+
+    margin-bottom: 35px;
+
+}
+
+form {
+
+    display: flex;
+
+    flex-direction: column;
+
+}
+
+input {
+
+    height: 50px;
+
+    border: none;
+
+    outline: none;
+
+    border-radius: 25px;
+
+    padding: 0 20px;
+
+    margin-bottom: 18px;
+
+    background:
+        rgba(255,
+            255,
+            255,
+            .68);
+
+    font-size: 16px;
+
+}
+
+input:focus {
+
+    box-shadow:
+
+        0 0 0 3px rgba(255,
+            90,
+            0,
+            .35);
+
+}
+
+button {
+
+    width: 180px;
+
+    height: 50px;
+
+    margin: 15px auto;
+
+    border: none;
+
+    border-radius: 25px;
+
+    background: #d85b24;
+
+    color: white;
+
+    font-size: 16px;
+
+    font-weight: bold;
+
+    cursor: pointer;
+
+    transition: .2s;
+
+}
+
+button:hover {
+
+    background: #bc4d1d;
+
+    transform:
+        translateY(-2px);
+
+}
+
+#mensajeError {
+
+    text-align: center;
+
+    min-height: 22px;
+
+    color: #ffb2b2;
+
+    margin-top: 10px;
+
+}
+
+.login {
+
+    text-align: center;
+
+    margin-top: 15px;
+
+    text-decoration: none;
+
+    color: #ff5a00;
+
+    font-weight: bold;
+
+}
+
+.login:hover {
+
+    text-decoration: underline;
+
+}
+
+@media(max-width:600px) {
+
+    .contenedor-form {
+
+        width: 90%;
+
+        padding: 25px;
+
+    }
+
+    .contenedor-form h1 {
+
+        font-size: 38px;
+
+    }
+
+}

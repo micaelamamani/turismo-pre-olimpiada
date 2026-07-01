@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../estilos/headerAdmin.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <title>Gestionar ventas</title>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <i class="fa-solid fa-plane"></i>
+            <h1>TRIPBUY</h1>
+        </div>
+        <!-- PANTALLAS-->
+        <nav class="nav-header">
+            <a href="gestionDeClientes.html"><i style="color: #ffffff;" class="fa-solid fa-users"></i> Gestionar clientes</a>
+            <a href="gestionDeProductos.html"><i style="color: #ffffff;" class="fa-solid fa-boxes-stacked"></i> Gestionar Productos</a>
+            <a href="ventasAdmin.html"><i style="color: #ff6600;" class="fa-solid fa-dollar-sign"></i> Ventas</a>
+        </nav>
+        <!-- LOGIN-->
+        <div class="usuario">
+            <a href="../paginaCliente/iniciarSesion.html"><i style="color: #ff6600; margin: 0.3vw;" class="fa-solid fa-user"></i>Iniciar sesión</a>
+        </div>
+    </header>
+    <section>.
+        <!-- BUSQUEDA DE VENTAS POR MES-->
+        <input id="mesBusqueda" type="month" onchange="cargarVentas()">
+        <table class="tabla-ventas">
+            <tr>
+                <th colspan="3">VENTAS</th>
+            </tr>
+            <tr>
+                <th>PRODUCTO</th>
+                <th>VENDIDOS</th>
+                <th>GANANCIAS</th>
+            </tr>
+            <tbody id="tablaVentas">
+                <tr>
+                    <td colspan="3">Seleccione un mes</td>
+                </tr>
+            </tbody>
+        </table>
+        <script src="../js/ventasAdmin.js"></script>
+        <script src="../js/sesion.js"></script>
+    </section>
+</body>
+
+</html>

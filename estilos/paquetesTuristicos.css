@@ -1,0 +1,255 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, sans-serif;
+}
+
+body{
+    background:url("../img/caribe.png");
+    background-size:cover;
+    background-position:center;
+}
+
+.titulo{
+    background:#d95a22;
+    display:flex;
+    justify-content: flex-end;
+    align-items:center;
+    padding:10px 30px;
+    min-height:80px;
+    margin-bottom: 20px;
+    margin-top:20px;
+    font-size: 25px;    
+}
+
+
+
+.paquetes{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+    gap:25px;
+    padding:25px;
+}
+
+
+
+.card img{
+    width:100%;
+    height:180px;
+    object-fit:cover;
+    border-radius:10px;
+}
+
+.card h3{
+    margin:10px 0;
+    font-size:15px;
+}
+
+.precio{
+    text-align:right;
+    font-weight:bold;
+    color:#000;
+}
+
+.acciones{
+    display:flex;
+    flex-wrap:wrap;
+    gap:8px;
+    margin-top:15px;
+}
+
+.acciones button{
+    background:#e65a1f;
+    color:white;
+    border:none;
+    border-radius:20px;
+    padding:5px 12px;
+    cursor:pointer;
+}
+
+.acciones a{
+    color:#e65a1f;
+    text-decoration:none;
+}
+
+.siguiente{
+    text-align:center;
+    background-color: rgb(228, 96, 1);
+    color:white;
+    font-size:20px;
+   background-size: auto;
+    margin-bottom:15px;
+    border:none;
+    border-radius:20px;
+    padding:12px 5px;
+    cursor:pointer;
+    margin:10px 500px 30px 500px;
+    
+}
+.siguiente i{
+    color:white;
+    font-size: 20px;
+    margin:0px;
+    padding:0px;
+}
+
+.siguiente a{
+    color:white;
+    text-decoration:none;
+    flex-shrink:0;         /* Evita que se achiquen */
+    padding:8px 12px;
+}
+
+.titulo-seccion{
+    background:#d95a22;
+    color:white;
+    font-weight:bold;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    text-align:center;
+    padding:15px;
+    margin:15px;
+    font-size: 28px;
+    margin-top: 130px;
+}
+
+.promos{
+    display:flex;
+    justify-content:center;
+    gap:30px;
+    padding:20px;
+}
+
+.puntos{
+    text-align:center;
+    color:white;
+    font-size:20px;
+    margin:20px 0;
+    margin-top:0px;
+    margin-bottom:100px;
+    
+}
+
+.recomendaciones{
+    display:flex;
+    justify-content:center;
+    gap:25px;
+    padding:20px;
+    flex-wrap:wrap;
+    margin-bottom:0px;
+}
+
+.recomendaciones i{
+    margin-top:50px;
+color:#ffff;
+    font-size:40px;
+}
+
+.promos{
+    display:flex;
+    justify-content:center;
+    gap:25px;
+    padding:20px;
+    flex-wrap:wrap;
+    margin-bottom:0px;
+}
+
+.promos i{
+    margin-top:50px;
+color:#ffff;
+    font-size:40px;
+}
+
+.card{
+    background:white;
+    border:none;
+    border-radius:15px;
+    padding:10px;
+    text-align:left;
+    cursor:pointer;
+    transition:.3s;
+    width:100%;
+    box-shadow:0 2px 8px rgba(0,0,0,.2);
+}
+
+.card:hover{
+    transform:translateY(-5px);
+}
+
+.card img{
+
+    width:100%;
+
+    height:120px;
+
+    object-fit:cover;
+
+    border-radius:10px;
+}
+
+.btn-comprar{
+
+    background:#e65a1f;
+
+    color:white;
+
+    padding:5px 10px;
+
+    border-radius:20px;
+
+    font-size:12px;
+}
+
+.btn-carrito{
+
+    background:black;
+
+    color:white;
+
+    padding:5px 10px;
+
+    border-radius:20px;
+
+    font-size:12px;
+}
+
+.ver-paquete{
+
+    color:#e65a1f;
+
+    font-size:12px;
+
+    font-weight:bold;
+}
+
+.recuadro{
+    width:220px;
+    height:150px;
+    background:white;
+    border:none;
+    border-radius:15px;
+    cursor:pointer;
+    transition:.3s;
+}
+
+.recuadro:hover{
+    transform:scale(1.05);
+}
+
+
+
+main > h1{
+    text-align:center;
+    color:white;
+    background:#d95a22;
+    padding:12px;
+    font-size:24px;
+    color:white;
+   padding:15px;
+    background:#d95a22;
+    font-size:20px;
+
+    
+    
+}
+

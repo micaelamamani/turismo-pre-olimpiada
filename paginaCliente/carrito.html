@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Mi carrito</title>
+    <link rel="stylesheet" href="../estilos/estiloInicio.css">
+    <link rel="stylesheet" href="../estilos/carrito.css">
+    <!--link rel="stylesheet" href="carritoprueba.css"-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <i class="fa-solid fa-plane"></i>
+            <h1>TRIPBUY<br></h1>
+        </div>
+        <nav>
+            <a href="index.html"><i class="fa-solid fa-house"></i> Inicio</a>
+            <a href="paquetesTuristicos.html"><i class="fa-solid fa-box"></i> Paquetes</a>
+            <a href="promo.html"><i class="fa-solid fa-tags"></i> Promos</a>
+            <a href="#"><i class="fa-solid fa-star"></i> Recomendados</a>
+            <a href="preguntasFrecuentes.html"><i class="fa-solid fa-question-circle"></i> Preguntas Frecuentes</a>
+        </nav>
+
+        <div class="usuario">
+            <a href="iniciarSesion.html"><i class="fa-solid fa-user-circle"></i><span id="textoUsuario">Iniciar
+                    sesión</span></a>
+            <a href="#" id="cerrarSesion" style="display:none;">
+                Cerrar sesión
+            </a>
+
+            <a href="pedidos.html"><i class="fa-solid fa-calendar"></i> Mis pedidos</a>
+            <a href="carrito.html" style="color: #d85c1f;"><i class="fa-solid fa-cart-shopping"></i> Mi carrito</a>
+        </div>
+    </header>
+    <!--main class="carrito"-->
+    <section class="resumen">
+        <!--<h1 class="titulo">
+            <i class="fa-solid fa-cart-shopping"></i>
+            Mi carrito
+        </h1>-->
+        <div class="contenedor">
+            <h1 id="micarrito">Mi carrito</h1>
+        </div>
+       
+        <section id="contenedorCarrito" class="contenedor-carrito">
+
+        </section>
+        
+        <div class="total">
+            
+            <span id="precioTotal">Total: $0</span>
+            <button id="btnMostrarPago">
+                COMPRAR
+            </button>
+        </div>
+    </section>
+            <!-- SECCION DE PAGO -->
+    <section id="seccionPago" class="oculto">
+        <h2>Medio de pago</h2>
+        <div class="botonesPago">
+            <button class="medioPago" data-tipo="credito">
+                Tarjeta de crédito
+            </button>
+            <button class="medioPago" data-tipo="debito">
+                Tarjeta de débito
+            </button>
+            <button class="medioPago" data-tipo="transferencia">
+                Transferencia
+            </button>
+        </div>
+
+        <!-- FORM TARJETAS -->
+        <form id="formTarjeta" class="oculto">
+            <h3 id="tituloTarjeta">
+                Tarjeta de crédito
+            </h3>
+            <input type="text" placeholder="Número de tarjeta" required>
+            <input type="text" placeholder="Nombre del titular" required>
+
+            <div class="fila">
+                <input type="text" placeholder="MM/AA" required>
+                <input type="text" placeholder="CVC" required>
+            </div>
+            <button type="button" class="comprar" id="comprar">Comprar</button>
+            <div id="procesando1" class="oculto">
+                <h2>Procesando pago...</h2>
+                <p>No cierre esta ventana.</p>
+            </div>
+        </form>
+
+        <!-- TRANSFERENCIA -->
+        <form id="formTransferencia" class="oculto">
+            <h3>
+                Transferencia bancaria
+            </h3>
+            <input type="text" placeholder="CUENTA" required>
+            <input type="text" placeholder="DNI" required>
+            </div>
+            <button type="button" class="comprar" id="comprar">
+                Comprar
+            </button>
+            <div id="procesando2" class="oculto">
+                <h2>Procesando pago...</h2>
+                <p>No cierre esta ventana.</p>
+            </div>
+        </form>
+        </div>
+    </section>
+            <button id="verReserva" style="display:none" onclick="window.location.href='reserva.html'">
+                Ver reservas
+            </button>
+        </section>
+    </main>
+    <!--script src="js/carrito.js"></script-->
+    <script src="../js/compra.js"></script>
+    <script src="../js/sesion.js"></script>
+</body>
+
+</html>

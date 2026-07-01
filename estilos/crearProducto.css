@@ -1,0 +1,190 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background-image:
+        url("../img/Captura de pantalla 2026-06-02 203140.png");
+    background-size: cover;
+    background-position: center;
+}
+
+.contenedor {
+    width: 800px;
+    margin: auto;
+    padding: 40px 0;
+}
+header {
+    width: 100%;
+    flex-shrink: 0;
+}
+#formProducto {
+    background: #f5f5f5;
+    border-radius: 25px;
+    padding: 15px;
+    display: flex;
+    gap: 15px;
+}
+.izquierda {
+    width: 260px;
+    position: relative;
+}
+
+
+.izquierda img {
+    width: 100%;
+    height: 230px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+
+.icono-mas {
+    position: absolute;
+    top: 70px;
+    left: 50%;
+    transform: translateX(-50%);
+
+
+    color: #ff5b00;
+    font-size: 40px;
+    cursor: pointer;
+}
+
+
+.input-url {
+    width: 100%;
+    margin-top: 10px;
+}
+
+
+.derecha {
+    flex: 1;
+
+
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+
+input,
+select {
+    border: none;
+    background: #f3d4bf;
+
+
+    border-radius: 20px;
+
+
+    padding: 10px;
+    text-align: center;
+}
+
+
+.fila {
+    display: flex;
+    gap: 10px;
+}
+
+
+.fila input {
+    flex: 1;
+}
+
+
+.grupo-fechas {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 8px;
+}
+
+
+.grupo-fechas input {
+    flex: 1;
+}
+
+
+.fila-mas {
+    display: flex;
+    justify-content: flex-end;
+}
+
+
+.btn-mas {
+    border: none;
+    background: none;
+
+
+    color: #000;
+
+
+    font-size: 28px;
+
+
+    cursor: pointer;
+}
+
+
+.crear {
+    width: 170px;
+    align-self: center;
+    border: none;
+    background: #ff5b00;
+    color: white;
+    border-radius: 20px;
+    padding: 12px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.crear:hover {
+    opacity: .9;
+}
+
+.btn-eliminar {
+
+    width: 40px;
+    height: 40px;
+
+    border: none;
+
+    border-radius: 50%;
+
+    background: #ff5b00;
+
+    color: white;
+
+    cursor: pointer;
+
+    font-size: 16px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    transition: .2s;
+
+}
+
+.btn-eliminar:hover {
+
+    background: #e14d00;
+
+    transform: scale(1.08);
+
+}
+
+.btn-eliminar:active {
+
+    transform: scale(.95);
+
+}

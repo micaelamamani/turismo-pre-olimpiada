@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestión de productos</title>
+    <link rel="stylesheet" href="../estilos/gestionDeProductos.css">
+<link rel="stylesheet" href="../estilos/headerAdmin.css">
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+<body>
+<header>
+        <div class="logo">
+            <i class="fa-solid fa-plane"></i>
+            <h1>TRIPBUY</h1>
+        </div>
+        <!-- PANTALLAS-->
+        <nav class="nav-header">
+            <a href="gestionDeClientes.html"><i style="color: #ffffff;"class="fa-solid fa-users"></i> Gestionar clientes</a>
+            <a href="gestionDeProductos.html"><i class="fa-solid fa-boxes-stacked" style="color: #ff6600;"></i> Gestionar Productos</a>
+            <a href="ventasAdmin.html"><i class="fa-solid fa-dollar-sign"></i> Ventas</a>
+        </nav>
+        <!-- LOGIN-->
+        <div class="usuario">
+            <a href="../paginaCliente/iniciarSesion.html"><i style="color: #ff6600; margin: 0.3vw;"class="fa-solid fa-user"></i>Iniciar sesión</a>
+        </div>
+    </header>
+    <br>
+    <h1>Buscar producto por ID</h1>
+    <div class="buscador">
+        <input type="number" id="txtId" placeholder="Ingrese ID">
+        <button onclick="buscarProducto()">Buscar</button>
+    </div>
+    <div id="contenedorProductos"></div>
+<div class="agregar-flotante">
+    <button onclick="agregarProducto()">
+        +
+    </button>
+    <h3>AGREGAR<br>PRODUCTO</h3>
+</div>
+    <script src="../js/gestionDeProductos.js"></script>
+    <script src="../js/sesion.js"></script>
+</div>
+</body>
+</html>

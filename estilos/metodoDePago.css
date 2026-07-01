@@ -1,0 +1,135 @@
+.metodo{
+
+    width:100%;
+    padding:15px;
+
+    border:none;
+
+    border-radius:30px;
+
+    background:#d95d1e;
+
+    color:white;
+
+    font-size:22px;
+
+    font-weight:bold;
+
+    text-align:left;
+
+    margin-bottom:15px;
+
+    cursor:pointer;
+}
+
+
+.formulario{
+
+    width:100%;
+
+    max-width:700px;
+
+    background:rgba(180,80,20,.75);
+
+    padding:25px;
+
+    border-radius:20px;
+
+    margin-top:20px;
+
+    display: none; /* Ocultos al iniciar */
+}
+
+.tipo{
+background-color: #d95d1e;
+color: white;
+border-radius:20px;
+border:none;
+padding:10px;
+}
+
+.imagen-tarjeta{
+    text-align: center;
+    margin: 15px 0;
+}
+
+.imagen-tarjeta img{
+    width: 120px;
+    height: auto;
+}
+
+.oculto{
+    display:none;
+}
+
+
+/*.logos{
+
+    display:flex;
+    justify-content:space-between;
+    margin-bottom:20px;
+}
+
+.logos img{
+
+    height:90px;
+}*/
+
+.formulario input{
+
+    width:100%;
+
+    padding:15px;
+
+    border:none;
+
+    border-radius:30px;
+
+    margin-bottom:15px;
+
+    font-size:22px;
+}
+
+.fila{
+
+    display:flex;
+    gap:15px;
+}
+
+.comprar{
+
+    display:block;
+
+    margin:auto;
+
+    padding:12px 50px;
+
+    border:none;
+
+    border-radius:30px;
+
+    background:#ff5b00;
+
+    color:white;
+
+    font-weight:bold;
+
+    cursor:pointer;
+}
+
+.filaTransferencia{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    gap:30px;
+}
+
+.precioTransferencia{
+
+    color:white;
+}
+

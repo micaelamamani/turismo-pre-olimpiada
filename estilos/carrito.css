@@ -1,0 +1,665 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/*body {
+    min-height: 100vh;
+
+    background:
+        linear-gradient(rgba(0, 90, 120, .25),
+            rgba(0, 90, 120, .25)),
+
+        url("../img/Captura de pantalla 2026-06-02 203140.png");
+
+    background-size: cover;
+    background-position: center;
+
+    color: white;
+}*/
+
+/* TITULO 
+
+h1 {
+    font-size: 50px;
+    margin: 40px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+h1::after {
+    color: #ff6b00;
+}
+
+*/
+
+#micarrito{
+    margin-bottom: 50px;
+    text-align: center;
+    
+}
+/* CONTENEDOR */
+#contenedorCarrito {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    padding: 20px;
+}
+
+
+/* TARJETA */
+
+.card {
+
+    width: 340px;
+
+    background: #efefef;
+
+    border-radius: 30px;
+
+    padding: 18px;
+
+    display: flex;
+
+    gap: 15px;
+
+    color: black;
+
+}
+
+
+.card img {
+
+    width: 140px;
+
+    height: 250px;
+
+    border-radius: 10px;
+
+    object-fit: cover;
+
+}
+
+
+.info {
+
+    flex: 1;
+
+}
+
+
+.info h2 {
+
+    font-size: 24px;
+
+    margin-bottom: 15px;
+
+}
+
+
+.info p {
+
+    margin-bottom: 10px;
+
+}
+
+
+.etiqueta {
+
+    display: inline-block;
+
+    background: #e96a22;
+
+    color: white;
+
+    padding: 6px 12px;
+
+    border-radius: 20px;
+
+    font-size: 12px;
+
+    margin-bottom: 10px;
+
+}
+
+
+.servicios {
+
+    margin-top: 15px;
+
+}
+
+.servicios label {
+
+    display: block;
+
+    margin-bottom: 8px;
+
+}
+
+
+.total-card {
+
+    margin-top: 20px;
+
+    background: #e96a22;
+
+    color: white;
+
+    padding: 10px;
+
+    border-radius: 8px;
+
+    font-weight: bold;
+
+}
+
+
+
+/* TOTAL */
+
+h2 {
+
+    text-align: center;
+
+    margin: 30px;
+
+    color: white;
+
+}
+
+
+#precioTotal {
+
+    background: #e96a22;
+
+    padding: 10px 20px;
+
+    border-radius: 10px;
+
+}
+
+
+
+/* BOTON */
+
+#comprar {
+
+    display: block;
+
+    margin: 0 auto 40px;
+
+    width: 220px;
+
+    height: 55px;
+
+    border: none;
+
+    border-radius: 30px;
+
+    background: #e96a22;
+
+    color: white;
+
+    font-size: 18px;
+
+    font-weight: bold;
+
+    cursor: pointer;
+
+    transition: .2s;
+
+}
+
+#comprar:hover {
+
+    transform: translateY(-3px);
+
+    background: #cf5816;
+
+}
+
+
+
+/* SECCION PAGO */
+
+#seccionPago {
+
+    background: #ead8bd;
+
+    color: black;
+
+    padding: 50px;
+
+    border-radius: 30px;
+
+    max-width: 900px;
+
+    margin: 40px auto;
+
+}
+
+
+#seccionPago h2 {
+
+    color: black;
+
+}
+
+
+.botonesPago {
+
+    display: flex;
+
+    justify-content: center;
+
+    gap: 15px;
+
+    flex-wrap: wrap;
+
+}
+.medioPago {
+    background: #e96a22;
+    color: white;
+    border: none;
+    padding: 15px 35px;
+    border-radius: 25px;
+    cursor: pointer;
+}
+#formTarjeta,
+#formTransferencia {
+
+    margin-top: 25px;
+
+    background: #e5a77f;
+
+    padding: 30px;
+
+    border-radius: 20px;
+
+}
+
+
+#formTarjeta input,
+#formTransferencia input {
+
+    width: 100%;
+
+    margin-bottom: 15px;
+
+    border: none;
+
+    border-radius: 10px;
+
+    padding: 12px;
+
+}
+
+
+.fila {
+
+    display: flex;
+
+    gap: 10px;
+
+}
+
+
+.oculto {
+
+    display: none;
+
+}
+
+
+#verReserva {
+
+    display: block;
+
+    margin: 20px auto;
+
+    background: #e96a22;
+
+    color: white;
+
+    border: none;
+
+    padding: 15px 25px;
+
+    border-radius: 20px;
+
+}
+
+
+
+@media(max-width:700px) {
+
+    .card {
+
+        flex-direction: column;
+
+        align-items: center;
+
+    }
+
+    .card img {
+
+        width: 100%;
+
+        height: 220px;
+
+    }
+
+}
+
+.info select {
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.total-item {
+
+    background: #d95d1e;
+
+    color: white;
+
+    padding: 8px;
+
+    font-weight: bold;
+}
+
+.barra-total {
+
+    background: #eee0c6;
+
+    padding: 20px;
+
+    display: flex;
+
+    justify-content: flex-end;
+
+    align-items: center;
+
+    gap: 30px;
+}
+
+.barra-total button {
+
+    background: #d95d1e;
+
+    border: none;
+
+    color: white;
+
+    padding: 15px 30px;
+
+    border-radius: 30px;
+
+    cursor: pointer;
+}
+
+.oculto {
+    display: none;
+}
+
+#checkout {
+
+    padding: 30px;
+
+    background: #eee0c6;
+}
+
+.metodos {
+
+    display: flex;
+
+    gap: 20px;
+
+    margin-bottom: 20px;
+}
+
+.metodos button {
+
+    flex: 1;
+
+    background: #d95d1e;
+
+    color: white;
+
+    border: none;
+
+    border-radius: 30px;
+
+    padding: 15px;
+}
+
+.formulario {
+
+    background: #e7a173;
+
+    padding: 20px;
+
+    border-radius: 20px;
+
+    max-width: 700px;
+}
+
+.formulario input {
+
+    width: 100%;
+
+    padding: 12px;
+
+    margin-bottom: 10px;
+}
+
+.fila {
+    display: flex;
+    gap: 10px;
+}
+
+#btnConfirmar {
+
+    margin-top: 20px;
+
+    background: #d95d1e;
+
+    color: white;
+
+    border: none;
+
+    padding: 15px 40px;
+
+    border-radius: 30px;
+}
+
+#procesando {
+    text-align: center;
+    padding: 50px;
+}
+/* CONTENEDOR */
+#contenedorCarrito{
+
+    width: 85%;
+
+    max-width: 900px;
+
+    margin: 30px auto;
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(
+            auto-fit,
+            minmax(250px, 320px)
+        );
+
+    justify-content: center;
+
+    gap: 20px;
+
+}
+
+
+/* TARJETA */
+#contenedorCarrito > div{
+
+    background: white;
+    color: black;
+    width: 100%;
+
+    border-radius: 22px;
+
+    padding: 15px;
+
+    box-shadow:
+        0 8px 20px
+        rgba(0,0,0,.12);
+
+}
+
+
+/* IMAGEN */
+#contenedorCarrito img{
+
+    width: 100%;
+
+    height: 170px;
+
+    object-fit: cover;
+
+    border-radius: 15px;
+
+}
+
+
+/* TITULO */
+#contenedorCarrito h2{
+
+    font-size: 22px;
+    color: black;
+    margin: 12px 0;
+
+}
+
+
+/* TEXTO */
+#contenedorCarrito p{
+
+    font-size: 15px;
+
+}
+
+
+/* PRECIO */
+#contenedorCarrito p:last-of-type{
+
+    font-size: 20px;
+
+}
+
+
+/* BOTON */
+#contenedorCarrito button{
+
+    width: 140px;
+
+    height: 40px;
+
+}
+/*DATOS TRANSFERENCIA*/
+.resumen{
+    padding:40px;
+    margin-top: -60px;
+}
+
+
+.total{
+    margin-top:40px;
+    text-align:right;
+    padding:30px;
+}
+
+
+.total button{
+    padding:12px 35px;
+    border:none;
+    border-radius:20px;
+    cursor:pointer;
+    background:#d85b1f;
+    color:white;
+    font-weight:bold;
+}
+
+
+.oculto{
+    display:none;
+}
+
+
+#seccionPago{
+    background:#f0dcc0;
+    padding:30px;
+}
+
+
+.botonesPago{
+    display:flex;
+    gap:15px;
+    margin:20px 0;
+}
+
+
+.botonesPago button{
+    padding:12px 25px;
+    border:none;
+    border-radius:20px;
+    cursor:pointer;
+    background:#d85b1f;
+    color:white;
+}
+#formTransferencia,
+#formTarjeta{
+    background:#e9a979;
+    width:600px;
+    padding:20px;
+    border-radius:15px;
+}
+#formTransferencia input,
+#formTarjeta input{
+    width:100%;
+    padding:10px;
+    margin:8px 0;
+    border:none;
+    border-radius:8px;
+}
+
+
+.fila{
+    display:flex;
+    gap:10px;
+}
+
+
+#formTarjeta button,
+#formTransferencia button{
+    margin-top:10px;
+    padding:10px 20px;
+    border:none;
+    border-radius:20px;
+    background:#d85b1f;
+    color:white;
+    cursor:pointer;
+}
+
+
+#datosTransferencia{
+    background:#e9a979;
+    padding:20px;
+    width:500px;
+    border-radius:15px;
+}

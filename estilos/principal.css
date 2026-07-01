@@ -1,0 +1,302 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+body{
+    background:url("../img/Captura\ de\ pantalla\ 2026-06-02\ 203140.png");
+    background-size:cover;
+    background-position:center;
+    background-attachment:fixed;
+    color:white;
+}
+
+/* HEADER */
+
+/*header{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:15px 30px;
+}*/
+
+.logo{
+    display:flex;
+    align-items:center;
+    gap:15px;
+}
+
+.logo i{
+    color:#ff6600;
+    font-size:40px;
+}
+
+header{
+    display:flex;
+    align-items:center;
+    padding:15px 30px;
+    gap:30px;
+}
+
+nav{
+    display:flex;
+    gap:25px;
+    flex-wrap:nowrap;      /* Nunca baja de línea */
+    overflow-x:auto;       /* Permite desplazarse */
+    white-space:nowrap;    /* Mantiene todo en una fila */
+    flex:1;
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
+    font-weight:bold;
+    flex-shrink:0;         /* Evita que se achiquen */
+    padding:8px 12px;
+}
+
+nav a:hover{
+    color:#ff6600;
+}
+
+nav::-webkit-scrollbar{
+    height: 5px;
+}
+
+nav::-webkit-scrollbar-thumb{
+    background:#ff6600;
+    border-radius:10px;
+}
+
+/*nav{
+    display:flex;
+    gap:25px;
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
+    font-weight:bold;
+}
+
+nav a:hover{
+    color:#ff6600;
+}*/
+
+.usuario{
+    display:flex;
+    gap:15px;
+}
+
+.usuario a{
+    color:white;
+    text-decoration:none;
+}
+
+/* MENU LATERAL */
+
+.menu-lateral{
+    position:fixed;
+    left:10px;
+    top:120px;
+    display:flex;
+    flex-direction:column;
+    gap:15px;
+}
+
+.menu-lateral h3{
+    text-align:center;
+}
+
+.icono{
+    text-align:center;
+}
+
+.icono i{
+    width:50px;
+    height:50px;
+    border-radius:50%;
+    background:#e55d1c;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    margin:auto;
+}
+
+.icono span{
+    display:block;
+    font-size:12px;
+    margin-top:5px;
+}
+
+/* BUSCADOR */
+
+.buscador{
+    width:75%;
+    margin:30px auto;
+    text-align:center;
+}
+
+.buscador h2{
+    font-size:45px;
+    margin-bottom:20px;
+}
+
+.barra-busqueda{
+    background:white;
+    border-radius:20px;
+    overflow:hidden;
+    display:flex;
+}
+
+.barra-busqueda input{
+    flex:1;
+    border:none;
+    padding:20px;
+    font-size:16px;
+}
+
+.barra-busqueda button{
+    width:90px;
+    border:none;
+    background:#e55d1c;
+    color:white;
+    font-size:25px;
+    cursor:pointer;
+}
+
+/* CARDS */
+
+.cards{
+    width:90%;
+    margin:40px auto;
+    display:flex;
+    gap:25px;
+}
+
+.card{
+    flex:1;
+    height:250px;
+    background:white;
+    border-radius:25px;
+}
+
+.card-flecha{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+.card-flecha i{
+    font-size:60px;
+    color:#e55d1c;
+}
+
+/* NOSOTROS */
+
+.nosotros{
+    width:90%;
+    margin:20px auto 60px;
+}
+
+.nosotros h2{
+    font-size:45px;
+    margin-bottom:15px;
+}
+
+.nosotros p{
+    font-size:30px;
+    max-width:700px;
+}
+
+.nosotros h3{
+    margin-top:20px;
+    color:#ff6600;
+}
+
+/* COMENTARIOS */
+
+.comentarios{
+    background:white;
+    color:black;
+    padding:25px;
+    
+}
+
+/*.comentarios h2{
+    margin-bottom:10px;
+}*/
+
+.contenedor-comentarios{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:20px;
+}
+
+.comentario{
+    padding:10px;
+
+}
+
+.estrellas{
+    color:orange;
+    font-size:25px;
+}
+
+/* FOOTER */
+
+footer{
+    background:#d85c1f;
+    padding:25px;
+    display:flex;
+    justify-content:space-around;
+    flex-wrap:wrap;
+}
+
+footer h4{
+    margin-bottom:10px;
+}
+
+.redes{
+    display:flex;
+    gap:15px;
+    font-size:25px;
+}
+
+/* RESPONSIVE */
+
+@media(max-width:900px){
+
+    header{
+        flex-direction:column;
+        gap:20px;
+    }
+
+    nav{
+        flex-wrap:wrap;
+        justify-content:center;
+    }
+
+    .cards{
+        flex-direction:column;
+    }
+
+    .contenedor-comentarios{
+        grid-template-columns:1fr;
+    }
+
+    .barra-busqueda{
+        flex-direction:column;
+    }
+
+    .barra-busqueda button{
+        width:100%;
+        height:60px;
+    }
+
+    .menu-lateral{
+        display:none;
+    }
+}

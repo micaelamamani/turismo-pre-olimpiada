@@ -1,0 +1,373 @@
+body {
+    margin: 0;
+    min-height: 100vh;
+    display: block;
+
+}
+
+/* BUSCADOR */
+
+.busqueda {
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    gap: 15px;
+
+    margin-top: 40px;
+
+    margin-bottom: 30px;
+
+}
+
+.busqueda input {
+
+    width: 320px;
+
+    padding: 15px;
+
+    border: none;
+
+    border-radius: 30px;
+
+    font-size: 16px;
+
+}
+
+.busqueda button {
+
+    padding: 14px 30px;
+
+    border: none;
+
+    border-radius: 30px;
+
+    background: #ff6600;
+
+    color: white;
+
+    font-weight: bold;
+
+    cursor: pointer;
+
+}
+
+.busqueda button:hover {
+
+    background: #e05b00;
+
+}
+
+
+/* PANEL */
+
+.panel-pedidos {
+    width: 85%;
+    margin: auto;
+    background: rgb(235, 235, 235);
+    border-radius: 25px;
+    padding: 40px;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, .25);
+    margin-bottom: 60px;
+
+}
+
+/* COLUMNAS */
+.contenedor {
+
+    display: flex;
+
+    min-height: 700px;
+
+}
+
+
+.columna {
+
+    flex: 1;
+
+    padding: 20px;
+
+    overflow: auto;
+
+}
+
+
+.division {
+
+    width: 3px;
+
+    background: #858585;
+
+    border-radius: 20px;
+
+}
+
+
+.columna h2 {
+
+    color: #ff6600;
+
+    text-align: center;
+
+    margin-bottom: 25px;
+
+}
+
+
+/* TARJETAS */
+
+.tarjeta {
+
+    background: #f8f8f8;
+
+    border-radius: 25px;
+
+    padding: 25px;
+
+    margin-bottom: 20px;
+
+    box-shadow:
+
+        0 4px 10px rgba(0, 0, 0, .08);
+
+}
+
+
+.tarjeta h3 {
+
+    color: #333;
+
+    margin-bottom: 15px;
+
+}
+
+
+.info {
+
+    display: inline-block;
+
+    background: #ff6600;
+
+    color: white;
+
+    padding: 8px 14px;
+
+    border-radius: 20px;
+
+    margin: 5px;
+
+    font-size: 14px;
+
+}
+
+
+.subtotal {
+
+    margin-top: 15px;
+
+    color: #ff6600;
+
+    font-weight: bold;
+
+}
+
+
+.precio {
+
+    margin-top: 10px;
+
+    padding: 10px;
+
+    border-radius: 15px;
+
+    background: #ff6600;
+
+    color: white;
+
+    font-weight: bold;
+
+}
+
+
+.botones {
+
+    display: flex;
+
+    gap: 12px;
+
+    margin-top: 20px;
+
+}
+
+
+.botones button {
+
+    flex: 1;
+
+    padding: 12px;
+
+    border: none;
+
+    border-radius: 15px;
+
+    cursor: pointer;
+
+    font-weight: bold;
+
+}
+
+
+.entregar {
+
+    background: #ff8a00;
+
+    color: white;
+
+}
+
+
+.cancelar {
+
+    background: #ff3b30;
+    color: white;
+}
+
+.entregar:hover {
+    opacity: .9;
+}
+
+.cancelar:hover {
+    opacity: .9;
+}
+
+/* PANEL CLIENTE */
+
+.panel-cliente {
+
+    width: 90%;
+
+    margin: 30px auto;
+
+    background: white;
+
+    padding: 25px;
+
+    border-radius: 25px;
+
+    box-shadow: 0 10px 25px rgba(0, 0, 0, .12);
+
+}
+
+/* DATOS CLIENTE */
+
+#infoCliente {
+
+    background: #fff3eb;
+
+    padding: 20px;
+
+    border-radius: 18px;
+
+    margin-bottom: 25px;
+
+    color: #444;
+
+}
+
+#infoCliente h3 {
+
+    color: #ff6b1a;
+
+    margin-bottom: 10px;
+
+}
+
+#infoCliente p {
+
+    margin: 6px 0;
+
+}
+
+/* TABLA */
+
+.tabla-historial {
+
+    width: 100%;
+
+    border-collapse: collapse;
+
+    overflow: hidden;
+
+    border-radius: 15px;
+
+}
+
+.tabla-historial th {
+
+    background: #ff8a3c;
+
+    color: white;
+
+    padding: 14px;
+
+}
+
+.tabla-historial td {
+
+    padding: 14px;
+
+    text-align: center;
+
+    background: #fff;
+
+    border-bottom: 1px solid #eee;
+
+    color: #444;
+
+}
+
+.tabla-historial tr:hover td {
+
+    background: #fff7f2;
+
+}
+
+/* ESTADOS */
+
+.estado {
+
+    padding: 8px 14px;
+
+    border-radius: 20px;
+
+    font-weight: bold;
+
+    display: inline-block;
+
+}
+
+.estado.entregado {
+
+    background: #d9ffe6;
+
+    color: #1c9c4f;
+
+}
+
+.estado.cancelado {
+
+    background: #ffe0e0;
+
+    color: #d43030;
+
+}
+
+.estado.pendiente {
+    background: #ededed;
+    color: #666;
+
+}

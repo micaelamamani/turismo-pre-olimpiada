@@ -1,0 +1,92 @@
+.compra{
+    width:95%;
+    max-width:1300px;
+    margin:auto;
+    display:flex;
+    background:#ececec;
+    border-radius:30px;
+    overflow:hidden;
+}
+
+.imagen{
+    width:48%;
+}
+
+.imagen img{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+}
+
+.datos{
+    width:52%;
+    padding:20px;
+}
+
+.datos h1{
+    color:black;
+    margin-bottom:20px;
+}
+
+select{
+    width:100%;
+    padding:15px;
+    border:none;
+    border-radius:25px;
+    background:#d95d1e;
+    color:white;
+    font-weight:bold;
+    margin-bottom:15px;
+}
+
+fieldset{
+    border:none;
+    margin-top:15px;
+}
+
+fieldset label{
+    display:block;
+    color:black;
+    margin:10px 0;
+}
+legend{
+    color:black;
+}
+
+#precioPersona{
+    color:#d95d1e;
+    margin-top:20px;
+}
+
+.precio-total{
+    background:#d95d1e;
+    color:white;
+    padding:15px;
+    width:250px;
+    font-size:25px;
+    font-weight:bold;
+    margin-top:15px;
+}
+
+.botones{
+    display:flex;
+    justify-content:space-between;
+    margin-top:40px;
+}
+
+.botones button{
+    border:none;
+    border-radius:25px;
+    padding:15px 30px;
+    color:white;
+    font-weight:bold;
+    cursor:pointer;
+}
+
+.botones button:first-child{
+    background:black;
+}
+
+.botones button:last-child{
+    background:#ff5b00;
+}

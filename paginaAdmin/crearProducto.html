@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Nuevo Producto</title>
+    <link rel="stylesheet" href="../estilos/crearProducto.css">
+    <link rel="stylesheet" href="../estilos/headerAdmin.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <i class="fa-solid fa-plane"></i>
+            <h1>TRIPBUY</h1>
+        </div>
+        <!-- PANTALLAS-->
+        <nav class="nav-header">
+            <a href="gestionDeClientes.html"><i style="color: #ffffff;"class="fa-solid fa-users"></i> Gestionar clientes</a>
+            <a href="gestionDeProductos.html"><i style="color: #ff6600;;"class="fa-solid fa-boxes-stacked"></i> Gestionar Productos</a>
+            <!--a href="#"><i style="color: #ffffff;"class="fa-solid fa-chart-line"></i> Reportes</a-->
+            <a href="ventasAdmin.html"><i style="color: #ffffff;"class="fa-solid fa-dollar-sign"></i> Ventas</a>
+        </nav>
+        <!-- LOGIN-->
+        <div class="usuario">
+            <a href="../paginaCliente/iniciarSesion.html"><i style="color: #ff6600; margin: 0.3vw;"class="fa-solid fa-user"></i>Iniciar sesión</a>
+        </div>
+    </header>
+    <div class="contenedor">
+        <form id="formProducto" onsubmit="event.preventDefault();crearProducto();">
+            <div class="izquierda">
+                <img id="previewImagen" src="" alt="Imagen">
+                <label class="icono-mas" onclick="cargarImagen()">
+                    <i class="fa-solid fa-circle-plus"></i>
+                </label>
+                <input id="imagen" type="url" placeholder="PEGAR URL DE IMAGEN" class="input-url" required>
+            </div>
+            <div class="derecha">
+                <input id="nombre" type="text" placeholder="NOMBRE DEL PAQUETE" required>
+                <div id="contenedor-fechas">
+                    <div class="fecha-item grupo-fechas">
+                        <input class="salida" type="date" required>
+                        <input class="regreso" type="date">
+                    </div>
+                </div>
+
+                <div class="fila-mas">
+
+                    <button type="button" id="btnAgregarFecha" class="btn-mas" onclick="agregarFecha()"><i class="fa-solid fa-circle-plus"></i>
+                        </button>
+                </div>
+                <div class="fila">
+                    <input id="precio" type="text" inputmode="numeric" placeholder="PRECIO UNITARIO">
+                    <input id="cupo" type="number" placeholder="CUPO" min="1">
+                </div>
+                <select id="destacado" required>
+                    <option value="">
+                        TIPO
+                    </option>
+                    <option value="normal">
+                        Normal
+                    </option>
+                    <option value="promo">Promo</option>
+                    <option value="recomendado">Recomendado</option>
+                </select>
+                <select id="categoria" required>
+                    <option value="">
+                        CATEGORIA
+                    </option>
+                    <option value="paquete">
+                        Paquete
+                    </option>
+                    <option value="hotel">
+                        Hospedaje
+                    </option>
+                    <option value="vuelo">Vuelo</option>
+                    <option value="excursion">Excursiones</option>
+                    <option value="auto">Transporte</option>
+
+                </select>
+                <button type="submit" class="crear">
+                    CREAR NUEVO PRODUCTO
+                </button>
+
+
+            </div>
+        </form>
+    </div>
+    <script src="../js/crearProducto.js"></script>
+    <script src="../js/sesion.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Iniciar Sesión</title>
+    <link rel="stylesheet" href="../estilos/iniciarSesion.css">
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+<header>
+    <div class="logo">
+        <i class="fas fa-plane"></i>
+        <div class="texto-logo"><h2>TRIPBUY</h2></div>
+    </div>
+    <nav>
+        <a href="index.html"><i class="fas fa-home"></i><span>inicio</span></a>
+        <a href="#">
+            <i class="fas fa-phone"></i>
+            <span>contacto</span>
+        </a>
+    </nav>
+    <div class="login-top">
+        <i class="fas fa-user-circle"></i>
+        <a href="iniciarSesion.html">Iniciar sesion</a>
+    </div>
+</header>
+<main>
+    <section class="contenedor-form">
+        <h1>inicio de sesion</h1>
+        <form action="" method="POST">
+            <label for="usuario">usuario</label>
+            <input type="text" id="usuario" name="usuario" required>
+            
+            <label for="password">contraseña</label>
+            <input type="password" id="contraseña" name="password" required>
+            <p id="mensajeError"></p>
+            <button id="iniciarSesion" type="button">INGRESAR</button>
+            <a href="registro.html" class="registrarse">REGISTRARSE</a>
+        </form>
+    </section>
+    <script src="../js/login.js"></script>
+</main>
+</body>
+</html>
